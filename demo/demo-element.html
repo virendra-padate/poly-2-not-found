@@ -1,0 +1,24 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../page-not-found.html">
+
+<dom-module id="demo-element">
+  <template>
+    <style>
+      :host {
+        font-family: sans-serif;
+      }
+    </style>
+
+    <not-found></not-found>
+  </template>
+
+  <script>
+    class DemoElement extends Polymer.Element {
+      static get is() {
+        return "demo-element"
+      }
+    }
+
+    customElements.define(DemoElement.is, DemoElement);
+  </script>
+</dom-module>
