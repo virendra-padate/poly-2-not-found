@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 
-<dom-module id="not-found">
+<dom-module id="page-not-found">
   <template>
     <style>
       :host {
@@ -25,9 +25,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   <script>
-    class NotFound extends Polymer.Element {
+    class PageNotFound extends Polymer.Element {
       static get is() {
-        return 'not-found';
+        return 'page-not-found';
       }
       static get properties() {
         return {
@@ -38,6 +38,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     }
 
-    window.customElements.define(NotFound.is, NotFound);
+    window.customElements.define(PageNotFound.is, PageNotFound);
   </script>
 </dom-module>
